@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="#home">首页</a>
+    <a href="#gallery">照片墙</a>
+    <a href="#video">视频</a>
+  </nav>
+
+  <!-- 首页 -->
+  <section id="home">
+    <h1>欢迎来到我的主页</h1>
+    <p>这里是我的学习与生活记录</p>
+  </section>
+
+  <!-- 照片轮播 -->
+  <section id="gallery">
+    <h2>我的照片</h2>
+    <div class="carousel">
+      <div class="slides">
+        <img src="images/photo1.jpg" class="slide active">
+        <img src="images/photo2.jpg" class="slide">
+        <img src="images/photo3.jpg" class="slide">
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- 视频展示 -->
+  <section id="video">
+    <h2>我的视频</h2>
+    <video controls width="600">
+      <source src="videos/demo.mp4" type="video/mp4">
+      您的浏览器不支持视频播放。
+    </video>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
